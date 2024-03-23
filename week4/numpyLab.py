@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 # numpy is a library used for working with arrays,
 # linear algebra and matrices
@@ -17,7 +18,12 @@ mean = a.min()
 
 d = np.array([-10, 201, 43, 94, 502])
 
-u = np.array([1, 0])
-v = np.array([0, 1])
-z = np.add(u, v)
-print(u + v, z)
+u = np.array([1, 2])
+v = np.array([2 / np.pi, 1])
+v = v + 1
+z = np.dot(u, v)
+x = np.linspace(0, 2 * np.pi, num=100)
+y = np.sin(x)
+
+plt.plot(x, y)
+plt.show()
