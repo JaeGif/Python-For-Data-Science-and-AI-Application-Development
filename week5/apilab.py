@@ -17,4 +17,6 @@ def one_dict(list_dict):
 
 
 nba_teams = teams.get_teams()
-print(nba_teams[0:3])
+dict_nba_team = one_dict(nba_teams)
+df_teams = pd.DataFrame(dict_nba_team)
+print(df_teams.head())
